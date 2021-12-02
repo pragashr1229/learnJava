@@ -1,0 +1,49 @@
+What is Lambda Expression?
+• Lambda is equivalent to a function (method) without a name.
+• Lambda’s are also referred as Anonymous functions.
+	• Method parameters
+	• Method Body
+	• Return Type
+• Lambdas are not tied to any class like a regular method.
+• Lambda can also be assigned to variable and passed around.
+
+
+Lambda Expression:
+ (argument-list) -> {body}  
+
+
+() -> {  
+//Body of no parameter lambda  
+}  
+One Parameter Syntax
+
+(p1) -> {  
+//Body of single parameter lambda  
+}  
+Two Parameter Syntax
+
+(p1,p2) -> {  
+//Body of multiple parameter lambda  
+}   
+
+Usages of Lambda
+• Lambda is mainly used to implement Functional Interfaces(SAM - single abstract methods).
+	@FunctionalInterface
+	public interface Comparator<T> {
+ 		int compare(T o1, T o2);
+	}
+	
+	@FunctionalInterface
+	public interface Runnable {
+ 		public abstract void run();
+	}
+
+
+FunctionalInterface :
+Definition:
+• A Functional Interface(SAM) is an interface that has exactly one abstract
+method.
+@FunctionalInterface:
+• This annotation is introduced as part of the JDK 1.8.
+• Optional annotation to signify an interface as Functional Interface.
+
