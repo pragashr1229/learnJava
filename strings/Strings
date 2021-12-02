@@ -1,0 +1,96 @@
+
+ string is an object that represents a sequence of characters. 
+ The java.lang.String class is used to create a string object.
+ 
+ For example:
+
+char[] ch={'j','a','v','a'};  
+String s=new String(ch);  
+is same as:
+
+String s="java";  
+
+Java String class provides a lot of methods to perform operations on strings such as compare(), concat(), equals(), split(), length(), replace(), compareTo(), intern(), substring() etc.
+
+There are two ways to create String object:
+
+By string literal
+By new keyword
+
+1) String Literal
+String s1="Welcome";  
+String s2="Welcome";//It doesn't create a new instance  
+
+Note: String objects are stored in a special memory area known as the "string constant pool".
+
+2) By new keyword
+String s=new String("Welcome");//creates two objects and one reference variable  
+String s1=new String("Welcome");
+
+Immutable String in Java
+========================
+Once String object is created its data or state can't be changed but a new String object is created.
+
+
+Java String compare
+===================
+There are three ways to compare String in Java:
+
+By Using equals() Method
+By Using == Operator
+By compareTo() Method
+
+
+1) By Using equals() Method
+=======================
+
+The String class equals() method compares the original content of the string
+
+public boolean equals(Object another) compares this string to the specified object.
+public boolean equalsIgnoreCase(String another) compares this string to another string, ignoring case.
+
+
+2) By Using == operator
+=======================
+
+The == operator compares references not values.
+
+
+3) By Using compareTo() method
+==============================
+
+The String class compareTo() method compares values lexicographically and returns an integer value that describes if first string is less than, equal to or greater than second string.
+
+Suppose s1 and s2 are two String objects. If:
+
+s1 == s2 : The method returns 0.
+s1 > s2 : The method returns a positive value.
+s1 < s2 : The method returns a negative value.
+
+
+String Concatenation in Java
+=============================
+There are two ways to concatenate strings in Java:
+
+By + (String concatenation) operator
+By concat() method
+
+
+Java StringBuffer Class
+=======================
+
+Java StringBuffer class is used to create mutable (modifiable) String objects. 
+The StringBuffer class in Java is the same as String class except it is mutable i.e. it can be changed.
+
+
+Java StringBuilder Class
+=======================
+Java StringBuilder class is used to create mutable (modifiable) String. 
+The Java StringBuilder class is same as StringBuffer class except that it is non-synchronized.
+
+toString 
+========
+The toString() method returns the String representation of the object.
+
+If you print any object, Java compiler internally invokes the toString() method on the object. So overriding the toString() method, returns the desired output, it can be the state of an object etc. depending on your implementation.
+

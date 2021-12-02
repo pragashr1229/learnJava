@@ -1,0 +1,80 @@
+Exception Handling in Java
+==========================
+In Java, an exception is an event that disrupts the normal flow of the program. 
+It is an object which is thrown at runtime.
+
+Exception Handling is a mechanism to handle runtime errors such as ClassNotFoundException, 
+IOException, SQLException, RemoteException, etc.
+
+Scenario :
+-----------
+statement 1;  
+statement 2;  
+statement 3;  
+statement 4;  
+statement 5;//exception occurs  
+statement 6;  
+statement 7;  
+statement 8;  
+statement 9;  
+statement 10;  
+
+Types of Java Exceptions
+Checked Exception - Checked exceptions are checked at compile-time.
+Unchecked Exception - RuntimeException are known as unchecked exceptions
+Error - Error is irrecoverable. Some example of errors are OutOfMemoryError, VirtualMachineError, AssertionError etc.
+
+
+Java finally block
+=================
+Java finally block is a block used to execute important code 
+such as closing the connection, etc.
+
+Java finally block is always executed whether an exception is handled or not. 
+Therefore, it contains all the necessary statements that need to be printed regardless of the exception occurs or not0
+
+
+.
+
+
+
+The finally block follows the try-catch block.
+
+Java Multi-catch block
+=====================
+A try block can be followed by one or more catch blocks. Each catch block must contain a different exception handler. So, if you have to perform different tasks at the occurrence of different exceptions, use java multi-catch block.
+
+Points to remember
+At a time only one exception occurs and at a time only one catch block is executed.
+All catch blocks must be ordered from most specific to most general, i.e. catch for ArithmeticException must come before catch for Exception.
+
+
+Java Nested try block
+=====================
+In Java, using a try block inside another try block is permitted. It is called as nested try block. Every statement that we enter a statement in try block, context of that exception is pushed onto the stack.
+
+For example, the inner try block can be used to handle ArrayIndexOutOfBoundsException while the outer try block can handle the ArithemeticException (division by zero).
+
+
+Throw :
+======
+The throw keyword in Java is used to explicitly throw an exception from a method or any block of code. 
+We can throw either checked or unchecked exception. 
+The throw keyword is mainly used to throw custom exceptions.
+
+Syntax: 
+
+throw Instance
+Example:
+throw new ArithmeticException("/ by zero");
+
+throws :
+=======
+The Java throws keyword is used to declare an exception. It gives an information to the programmer that there may occur an exception.
+ So, it is better for the programmer to provide the exception handling code so that the normal flow of the program can be maintained.
+ 
+ Syntax of Java throws
+return_type method_name() throws exception_class_name{  
+//method code  
+}  
+

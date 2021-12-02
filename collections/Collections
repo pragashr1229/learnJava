@@ -1,0 +1,109 @@
+Collections in Java
+===================
+
+The Collection in Java is a framework that provides an architecture to store and manipulate the group of objects.
+
+Java Collections can achieve all the operations that you perform on a data such as searching, sorting, insertion, manipulation, and deletion.
+
+Method:
+======
+boolean add(Object obj)
+boolean addAll(Collection c)
+void clear( )
+boolean contains(Object obj) - Returns true if obj is an element of the invoking collection. Otherwise, returns false.
+boolean containsAll(Collection c) - Returns true if the invoking collection contains all elements of c. Otherwise, returns false.
+boolean equals(Object obj) - Returns true if the invoking collection and obj are equal. Otherwise, returns false.
+boolean isEmpty( ) - Returns true if the invoking collection is empty. Otherwise, returns false.
+boolean remove(Object obj) - Removes one instance of obj from the invoking collection. Returns true if the element was removed. Otherwise, returns false.
+boolean removeAll(Collection c)
+int size( ) - Returns the number of elements held in the invoking collection.
+
+
+Java List
+========
+The List interface extends Collection & it provides the facility to maintain the ordered collection. 
+It contains the index-based methods to insert, update, delete and search the elements. 
+It can have the duplicate elements also. We can also store the null elements in the list.
+
+The List interface is found in the java.util package and inherits the Collection interface.
+
+How to create List
+//Creating a List of type String using ArrayList  
+
+List<E> list=new ArrayList<E>();  
+
+List<String> list=new ArrayList<String>();  
+  
+//Creating a List of type Integer using ArrayList  
+List<Integer> list=new ArrayList<Integer>();  
+  
+//Creating a List of type Book using ArrayList  
+List<Book> list=new ArrayList<Book>();  
+  
+//Creating a List of type String using LinkedList  
+List<String> list=new LinkedList<String>();  
+
+
+Map:
+===
+A map contains values on the basis of key, i.e. key and value pair. Each key and value pair is known as an entry. A Map contains unique keys.
+
+A Map is useful if you have to search, update or delete elements on the basis of a key.
+
+
+HashMap contains value based on the key.
+It may have a single null key and multiple null values.
+HashMap does not maintain order while iterating.
+It contains unique elements.
+It works on the principle of hashing.
+
+
+TreeMap :
+TreeMap also contains value based on the key.
+TreeMap is sorted by keys.
+It contains unique elements.
+It cannot have a null key but have multiple null values.
+Keys are in ascending order.
+It stores the object in the tree structure.
+
+
+Set::
+=====
+
+The Set interface contains only methods inherited from Collection and adds 
+the restriction that duplicate elements are prohibited.
+
+HashSet:
+=======
+HashSet doesn’t maintain any order, the elements would be returned in any random order.
+HashSet doesn’t allow duplicates. If you try to add a duplicate element in HashSet,
+ the old value would be overwritten.
+HashSet allows null values however if you insert more than one nulls it would still 
+return only one null value.
+
+TreeSet:
+========
+TreeSet is similar to HashSet except that it sorts the elements in the ascending order 
+while HashSet doesn’t maintain any order
+
+
+Java Comparable interface
+=========================
+Java Comparable interface is used to order the objects of the user-defined class. 
+We can sort the collection on the basis of a single element such as id, name, and price.
+This interface is found in java.lang package and contains only one method named 
+compareTo(Object).
+
+
+compareTo(Object obj) method
+public int compareTo(Object obj): It is used to compare the current object with the specified object. It returns
+
+positive integer, if the current object is greater than the specified object.
+negative integer, if the current object is less than the specified object.
+zero, if the current object is equal to the specified object.
+
+Comparator:
+==========
+The Comparator provides multiple sorting sequences. 
+In other words, we can sort the collection on the basis of multiple elements 
+such as id, name, and price etc.

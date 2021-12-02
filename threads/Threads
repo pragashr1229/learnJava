@@ -1,0 +1,71 @@
+
+A thread is a lightweight subprocess, the smallest unit of processing. 
+It is a separate path of execution.
+
+
+A Java Thread is like a virtual CPU that can execute your Java code - inside your Java application. 
+when a Java application is started its main() method is executed by the main thread - 
+a special thread that is created by the Java VM to run your application. 
+From inside your application you can create and start more threads which can 
+execute parts of your application code in parallel with the main thread.
+
+Multithreading in Java:
+=======================
+Multithreading in Java is a process of executing multiple threads simultaneously.
+
+A thread is a lightweight sub-process, the smallest unit of processing. 
+Multiprocessing and multithreading, both are used to achieve multitasking.
+
+Java Multithreading is mostly used in games, animation, etc.
+
+
+ways to create a thread:
+========================
+1.By extending Thread class -- no multiple inheritance
+2.By implementing Runnable interface -- achieve multiple inheritance
+
+Commonly used Constructors of Thread class:
+Thread()
+Thread(String name)
+Thread(Runnable r)
+Thread(Runnable r,String name)
+
+Commonly used methods of Thread class:
+======================================
+public void run(): is used to perform action for a thread.
+public void start(): starts the execution of the thread.JVM calls the run() method on the thread.
+public void sleep(long miliseconds): Causes the currently executing thread to sleep (temporarily cease execution) for the specified number of milliseconds.
+public int getPriority(): returns the priority of the thread.
+public int setPriority(int priority): changes the priority of the thread.
+public String getName(): returns the name of the thread.
+public void setName(String name): changes the name of the thread.
+public Thread currentThread(): returns the reference of currently executing thread.
+public int getId(): returns the id of the thread.
+public Thread.State getState(): returns the state of the thread.
+
+Why Runnable instead of Thread ??
+Our class always extends Thread class. There is no chance of extending any other class. 
+Hence we are missing Inheritance benefits. 
+
+while implementing Runnable interface we can extends any other class. 
+Hence we are able to use the benefits of Inheritance.
+ 
+ 
+Thread Priority:
+================
+Thread priority in Java is a number assigned to a thread that is used by Thread scheduler to decide which thread should be allowed to execute.
+
+By default threads run concurrently with priority as NORM_PRIORITY which value is 5
+
+3 constants defined in Thread class:
+public static int MIN_PRIORITY
+public static int NORM_PRIORITY
+public static int MAX_PRIORITY
+Default priority of a thread is 5 (NORM_PRIORITY). 
+The value of MIN_PRIORITY is 1 and the value of MAX_PRIORITY is 10.
+
+
+
+
+
+
