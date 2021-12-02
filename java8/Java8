@@ -1,0 +1,15 @@
+
+Java8 :
+
+Declarative style. (Functional programming uses the same style)
+
+• Using functions/methods as first class citizens.
+	Example:
+	Function<String,String> addSomeString = (name) -> name.toUpperCase().concat("default"); 
+
+• Java creators wanted to introduce the Functional features such as:
+• Lambdas
+• Streams
+• Optional and etc.
+
+
