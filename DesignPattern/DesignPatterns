@@ -1,0 +1,43 @@
+Structural Design Pattern :
+===========================
+
+Identify a simple way to realize relationship between entities
+
+Structural Design Pattern describes how classes and objects form larger structures
+
+Adapter - an adapter allows two incompatible interfaces to work together 
+
+Facade - Seperates entire steps in a subsystem from a system
+
+Composite - is a structural pattern which modifies the structure of an object. 
+		  - This pattern is most suitable in cases where you need to work with objects which form a tree like hierarchy.
+
+Breakdown the pattern into  
+component – is the base interface for all the objects in the composition. It should be either an interface or an abstract class with the common methods to manage the child composites.
+leaf – implements the default behavior of the base component. It doesn't contain a reference to the other objects.
+composite – has leaf elements. It implements the base component methods and defines the child-related operations.
+client – has access to the composition elements by using the base component object.
+ 
+
+Adapter Pattern Example :
+
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+System.out.print("Enter String");
+String s = br.readLine();
+System.out.print("Enter input: " + s);
+
+1) System.in is static instance of InputStream 
+This input stream natively reads the data from the console in bytes stream.
+
+2) BufferedReader as java docs define, reads a character stream.
+
+
+Now here is the problem. System.in provides byte stream where BufferedReader expects character stream. How they will work together?
+
+This is the ideal situation to put a adapter in between two incompatible interfaces. 
+InputStreamReader does exactly this thing and works adapter between System.in and BufferedReader.
+
+
+
+
+

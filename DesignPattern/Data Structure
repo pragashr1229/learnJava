@@ -1,0 +1,80 @@
+
+Data Structures
+A data structure is a particular way of organizing data in a computer so that it can be used effectively.
+
+Arrays:
+-------
+An array is a container object that holds a fixed number of values of a single type in a contiguous memory location. 
+It is a data structure which is used to store finite number of elements and all elements must be of similar data type.
+
+Arrays are index based data structure so they allow random access to elements, they store. Indices start with '0'.
+
+Array example
+int[] a = new int[5];
+ 
+a[0] = 1;
+a[1] = 2;
+a[2] = 4;
+a[3] = 8;
+a[4] = 16;
+
+
+ Types of Array in Java:
+ ----------------------
+ 1.Single Dimensional Array
+ 2.Multi-dimensional Array
+ 
+Single Dimensional Array:
+-------------------------
+ Array declaration
+type var-name[];
+OR
+type[] var-name;
+ 
+//Examples
+ 
+int[] numbers;
+ 
+String names[];
+
+Multi-dimensional Array:
+------------------------
+Multi-dimensional array declaration
+type var-name[][];
+OR
+type[][] var-name;
+ 
+//Examples
+ 
+int[][] cordinates;
+ 
+String nameSets[][];
+
+
+LinkedList:
+----------
+The LinkedList stores its items in "containers/nodes." 
+The list has a link to the first container and each container has a link to the next container in the list. 
+To add an element to the list, the element is placed into a new container and that container is 
+linked to one of the other containers in the list.
+
+A node has data and reference to next node in list
+First node is the head node
+Last node has the data and points to null.
+
+Stack:
+------
+The class is based on the basic principle of LIFO,FIFO. 
+In addition to the basic push and pop operations, the class provides three more functions of empty, search, and peek.
+
+
+
+
+
+
+
+
+
+
+
+

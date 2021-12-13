@@ -1,0 +1,36 @@
+Behavioral Patterns
+===================
+
+In software engineering, behavioral design patterns are design patterns that identify common communication patterns
+ between objects and realize these patterns. 
+ By doing so, these patterns increase flexibility in carrying out this communication.
+ 
+ concentrate on the way how our objects interact with each other or how we interact with them.
+ 
+ chain of responsibility :
+ =========================
+ "Gives more than one object an opportunity to handle a request by linking receiving objects together."
+ 
+ Chain of Responsibility allows a number of classes to attempt to handle a request, 
+ independently of any other object along the chain. Once the request is handled, it completes it’s journey through the chain.
+ 
+ Examples :
+ Support desk > supervisor > manager > director
+
+Mediator Design Pattern :
+=========================
+mediator pattern defines an object that encapsulates how a set of objects interact. 
+Mediator promotes loose coupling by keeping objects from referring to each other explicitly, 
+and it lets us vary their interaction independently.
+ 
+Examples : 
+traffic control room at airports
+chat application
+
+Observer Design Pattern
+=======================
+observer pattern defines a one-to-many dependency between objects so that when one object changes state, 
+all its dependents are notified and updated automatically. It is also referred to as the publish-subscribe pattern.
+
+Examples : 
+ Facebook or twitter. When a person updates his status – all his followers gets the notification.
